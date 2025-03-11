@@ -1,4 +1,46 @@
+html { 
+  background: url("/images/Hewg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-  background: black;
-  color: white;
+  background: rgba( 255, 255, 255, 0 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+}
+
+div.card {
+  background: rgba( 45, 41, 44, 0.7 );
+  box-shadow: 0 8px 32px 0 rgba( 217, 177, 59, 0.7 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  color: #D9B13B;
+  margin: 5px;
+}
+
+#navBarMain {
+  background-color: #250102;
+}
+
+.navbar-brand {
+  color: #BF8E34;
+}
+
+.navbar-brand:hover {
+  color: #A65813;
+}
+
+.nav-link {
+  color: #8D7D6C;
+}
+
+.btn {
+  background-color: #5A2102;
+  border: none;
+  color: #8D7D6C;
 }
