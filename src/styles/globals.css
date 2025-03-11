@@ -16,8 +16,8 @@ body {
 div.card {
   background: rgba( 45, 41, 44, 0.7 );
   box-shadow: 0 8px 32px 0 rgba( 217, 177, 59, 0.7 );
-  backdrop-filter: blur( 0px );
-  -webkit-backdrop-filter: blur( 0px );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
   color: #D9B13B;
   margin: 5px;

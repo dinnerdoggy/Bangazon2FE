@@ -7,7 +7,7 @@ function ProductCard({ productObj }) {
       <Card.Img variant="top" src={productObj.productImage} />
       <Card.Body>
         <Card.Title>{productObj.productName}</Card.Title>
-        <Card.Subtitle>{productObj.productTypeId}</Card.Subtitle>
+        <Card.Subtitle>{productObj.type}</Card.Subtitle>
         <Card.Text>{productObj.description}</Card.Text>
       </Card.Body>
     </Card>
@@ -19,7 +19,7 @@ ProductCard.propTypes = {
   productObj: PropTypes.shape({
     productImage: PropTypes.string,
     productName: PropTypes.string,
-    productTypeId: PropTypes.string,
+    type: PropTypes.string,
     description: PropTypes.string,
   }).isRequired,
 };
