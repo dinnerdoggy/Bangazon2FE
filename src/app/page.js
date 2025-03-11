@@ -23,7 +23,7 @@ function Home() {
   return (
     <div className="d-flex flex-wrap justify-content-center">
       {products.map((product) => (
-        <ProductCard key={product.id} productObj={product} onUpdate={getAllProducts} editDelete={false} />
+        <ProductCard key={product.id} productObj={product} onUpdate={getAllProducts} />
       ))}
     </div>
   );

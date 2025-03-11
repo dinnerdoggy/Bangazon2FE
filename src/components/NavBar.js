@@ -7,7 +7,7 @@ import { signOut } from '../utils/auth';
 
 export default function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar id="navBarMain" collapseOnSelect expand="lg">
       <Container>
         <Link passHref href="/" className="navbar-brand">
           <Image src="/images/favicon.ico" alt="Hewgs Logo" width={75} height={75} />
