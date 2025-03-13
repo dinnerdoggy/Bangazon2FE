@@ -7,7 +7,8 @@ function ProductCard({ productObj }) {
       <Card.Img variant="top" src={productObj.productImage} />
       <Card.Body>
         <Card.Title>{productObj.productName}</Card.Title>
-        <Card.Subtitle>{productObj.type}</Card.Subtitle>
+        <Card.Subtitle style={{ color: '#8D7D6C' }}>{productObj.type}</Card.Subtitle>
+        <hr />
         <Card.Text>{productObj.description}</Card.Text>
       </Card.Body>
     </Card>

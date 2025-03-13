@@ -14,7 +14,7 @@ body {
 }
 
 div.card {
-  background: rgba( 45, 41, 44, 0.7 );
+  background: rgba( 45, 41, 44, 0.8 );
   box-shadow: 0 8px 32px 0 rgba( 217, 177, 59, 0.7 );
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
@@ -37,6 +37,10 @@ div.card {
 
 .nav-link {
   color: #8D7D6C;
+}
+
+.nav-link:hover {
+  color: #5A4430;
 }
 
 .btn {
