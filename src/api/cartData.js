@@ -4,7 +4,7 @@ const endpoint = clientCredentials.databaseURL;
 
 const addToCart = (productId, user) => {
   const orderData = {
-    customerId: user, // Replace with the logged-in user's ID
+    customerId: user,
     productId,
   };
 
@@ -20,4 +20,9 @@ const addToCart = (productId, user) => {
     .catch((error) => console.error('Error adding to cart:', error));
 };
 
-export default { addToCart };
+const getCart = (customerId) =>
+  fetch(`${endpoint}/api/orders/${customerId}`)
+    .then((response) => response.json())
+    .catch((error) => console.error('Error fetching cart:', error));
+
+export { addToCart, getCart };

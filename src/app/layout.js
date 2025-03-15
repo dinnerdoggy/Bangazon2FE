@@ -10,7 +10,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClientProvider>{children}</ClientProvider>
+        <ClientProvider>
+          {children}
+          {/* Spotify Embed - Persistent Across All Pages */}
+          <div style={{ position: 'fixed', bottom: 0, width: '100%', zIndex: 1000 }}>
+            <iframe title="titleProperty" style={{ borderRadius: '12px', width: '100%', height: '80px' }} src="https://open.spotify.com/embed/track/1kys9Iw19srN8xllOlXOxB?utm_source=generator" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
+          </div>
+        </ClientProvider>
       </body>
     </html>
   );
